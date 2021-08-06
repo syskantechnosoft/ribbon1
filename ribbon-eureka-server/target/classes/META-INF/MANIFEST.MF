@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Built-By: Siva
+Build-Jdk: 15.0.2
+Implementation-Title: ribbon-eureka-server
+Implementation-Version: 0.0.1-SNAPSHOT
+Implementation-Vendor-Id: com.example
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-boot
+ -starter-parent/ribbon-eureka-server
+Created-By: Maven Integration for Eclipse
+
