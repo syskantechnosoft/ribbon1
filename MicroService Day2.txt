@@ -1,0 +1,180 @@
+MicroService Day2
+
+Small Example of Monolith Application
+
+Micro-Service
+
+Architecture
+
+Pro's & Con's 
+
+Different Terminologies (Service Discovery -- Service Registry)
+
+Eureka Server & Client 
+
+Zuul (Micro-Service Routing) / Feign Client
+
+Spring-Security 
+Swagger (API Documentation)
+Actuators (Health Check)
+
+
+Ribbon - Netflix OSS 
+
+
+Monolith Application (Web Service/SOA Based)
+
+Services will be the main area... 
+
+
+JPA is a Specification (Java Persistance API)  
+
+Petrol Car 
+Diesel Car
+Electric Car
+Hybrid Car
+
+
+JDBC (Java Database Connectivity)  --- Connection, Statement, PreparedStatement, 
+
+Driver JARS 
+
+
+Hibernate is also a JPA  implementation (ORM Framework)
+4 wheels 
+steering, acceleration & break
+
+Audi 
+Honda
+Tata
+
+
+src/main/java
+src/main/resources
+src/
+
+
+
+DAO -- Data Access Object (Repository)  --- This is responsible to interact with DB 
+
+getEmployees()   --- findAll()
+getEmployeeById(int id)   --- findById(int id)
+addEmployee(Employee employee)   ---  save(employee)
+updateEmployee(int id, Employee employee) -- save (employee)
+deleteEmployee(int id)  -- deleteById(id)
+
+
+@NamedQuery 
+
+
+select * from department where departname like '%sales%'
+
+HQL -- Hibernate Query Lang  (DB independant Query)  
+
+Also it works on top of the bean class not on  the actual table.
+
+WebServices --- SOA
+
+micro-service (Reusable APIs)  -- loosely coupled  (MicroService --- Not SOA)
+
+Adv 
+
+1) Code is completely decoupled
+2) Maintainence is very easy (Testing is easy) Current/latest technology
+3) Scalability, resource utilisation 
+
+
+dis-adv
+1) communication bet services
+2) db sharing 
+3) service registry & discovery
+
+multiple springboot projects
+
+communicating between services 
+
+departmentservice
+
+employeeservice
+
+employerservice
+
+Netflix OSS (Opensource)
+Serive Registry --- Eureka Server (Discovery Server/Service)  -- API Gateway
+
+Amazon, eBay, NetFlix, OLA 
+
+https://microservices.io/
+
+https://blog.dreamfactory.com/microservices-examples/
+
+
+ Netflix OSS components (Eureka, Hystrix, Zuul, Archaius, etc.).
+
+
+
+
+Monolith --- multiple components (Controllers, Services, Repositories, Model).....
+
+100 tables  -- highly complex appln... e2e testing will be difficult...
+
+
+Micro-Service 
+
+1) employee-service
+2) department-service
+3) discovery-server (eureka) --- Spring Cloud
+
+spring web
+spring data jpa
+devtools
+mysql driver
+ eureka discovery client
+
+
+
+@Controller   -- Controller (FrontController --- Dispatcher Servlet) 
+
+@RestController --- Used to create a REST ful Web Service --- Output will be in the form of JSON... 
+
+spring web
+spring data jpa
+devtools
+h2 driver
+ eureka discovery client
+
+
+
+1) Entity Bean class
+2) Repository Interface  (JpaRepository/CRUDRepository)
+3) Service Interface & Impl class
+4) Controller (with required mapping)
+
+
+Security (Spring-security) 
+
+1) form-based authentication 
+2) role-based autherization
+
+Authentication -- Checking valid credentials to access my service
+
+Authorization --- IS the process of checking the accessibility to sensitive informations of my service
+
+Online-shopping portal 
+
+https://reqres.in/
+
+
+Token based Authentication  --- JWT --- JSON Web Token 
+
+
+API Documentation  -- Swagger 
+
+LoadBalancing
+Ribbon
+Actuators
+RestTemplate 
+OpenFiegn
+Zuul Gateway
+
+

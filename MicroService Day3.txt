@@ -1,0 +1,96 @@
+JWT - Token Based Authentication 
+
+Implementation
+
+Micro-Service Communication
+
+
+NetFlix OSS (Open Source Softwares) Library
+ Netflix OSS components (Eureka, Hystrix, Zuul,Feign, Ribbon, Archaius, etc.).
+EurekaServer -- Discovery Server  (Service Registry & Discovery)
+EurekaClient  
+Feign  --- Call RESTful Services using declarative style
+Hystrix  --- Software Circuit Breaker
+Ribbon ---- Client Side Load Balancing
+
+
+https://github.com/syskantechnosoft/JWTAuthwithoutJPA
+
+@RestController
+EmployeeController
+DepartmentController
+
+Resource  -- This is the one they are going to access by using the url
+
+DTO --- Data Transfer Object 
+DAO --- Data Access Object
+
+CORS --- Cross Origin Resource Sharing 
+
+
+JWT -- Authentication & Authorization 
+
+Get Username and Password details (Valid Credentials) 
+
+1) InMemory Database
+2) Hard coded Username and Password Details
+3) Any DB table (MySQL/Oracle/Postgres) User (username/password/active/role.......)
+
+
+
+List<String> countryNames = ArrayList<String>();
+
+DI - Decoupling
+
+Sync  & Async
+
+Sync --- Blocking Operation  
+
+Async -- reactive programming (reactive approach)
+
+AJAX --- Asynchronous JavaScript and XML 
+
+
+request   ---------- blocked-------- > response
+
+
+Service to Service Calls
+
+1) RestTemplate (sync)
+2) WebClient (Async)
+
+
+
+https://www.javadream.in/resttemplate-in-spring-boot-microservice/
+
+
+
+Routing
+
+LoadBalancing 
+
+
+Hysterix
+Ribbon
+Zuul 
+Feign
+
+https://medium.com/@27.rahul.k/build-a-sample-project-with-spring-cloud-using-cloud-config-eureka-zuul-feign-hystrix-and-378b16bcb7c3
+
+https://github.com/27rahulk/cloud-pet-project
+
+
+
+
+Ribbon  ---  Client Side Load Balancing
+
+Hystrix  --- Enabling the metrics of the registered services
+
+
+Eureka  (Eureka Server / Eureka Client)
+
+java -jar -Dserver.port=9092 rs.jar
+
+
+
+

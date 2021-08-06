@@ -1,0 +1,435 @@
+Micro-Services 
+
+  1) Spring Boot  (Java Based Framework)
+  2) Spring (Initial version of SpringBoot) -- Java Based Framework
+  3) Design Pattern (IoC & DI) 
+  4) Monolith Application & Micro-Service Application
+  5) REST based Service (Web Service) 
+  6) Spring Security 
+  7) Spring Data JPA
+  8) InMemory DB, MySQL
+  9) Spring Cloud ( Eureka Server, Eureka Client)
+10) Documenting your API (Swagger)
+11) Microservice Monitoring (OpenAPIs)
+
+
+Software Requirements
+ 1) STS (Eclipse Based IDE)  spring.io/tools
+ 2) JDK 8/11   https://www.oracle.com/bh/java/technologies/javase/javase-jdk8-downloads.html
+ 3) Maven   https://maven.apache.org/download.cgi
+ 4) Postman (API Testing Tool)  https://www.postman.com/downloads/
+ 5) MySQL/ Oracle/ Postgres  https://dev.mysql.com/downloads/installer/
+
+
+
+Environment Variable ( System Level/User Level)
+
+
+
+sts4.jar
+
+
+compiler compilance   (Window -- Preference  -- Java ->Compiler)   --- Workspace based modifications
+
+ project based configuration (Applicable only for that project) 
+
+Eclipse Shortcuts
+Ctrl + f11 = to run the project/file
+Ctrl + =   -> To increase the font size
+Ctrl+Space = for Auto code completion
+Ctrl+/    = To comment or Uncomment selected lines
+
+
+
+1) Installed JDK8/11  (If it is not available)
+2) Modified PATH Environment Variable (If Required)
+3) Installed STS (java -jar sts4.jar)
+4) Created a New Java Project and executed 
+
+
+Types of Classes in JAVA
+1) WRT Creator                  Built-in Class (System, File, String, Date, LinkedList......) / User Defined Class
+2) WRT the Construction   Simple class (Complete/Concrete Class) / In-complete class (Abstract Class)
+3) WRT the behaviour       Final Class/ Inner Classes/ Annonymous Inner class 
+4) WRT the Functionality  Wrapper Class /POJO (Plain Old Java Object) / Starter Class 
+5) WRT the Inheritance     Base class/Parent Class/Super Class & child class/Derived class/sub class
+6) WRT data function        Bean Class (Representing the DB Table)
+7) 
+
+
+JDK  - Java Development Kit  (javac  --- this will invoke the java compiler ) converts .java (source code) to .class (byte code)
+JRE  -  Java Runtime Environment (to Execute the Java program .class)   java   --- this will invoke the JVM (Java Virtual Machine)   subset --  
+
+
+J2SE  -- JAVA 2 Standard Editions (Stand-alone application, rmi, networking, file handiling, multi-threading, db based appln) console based/GUI based 
+J2EE  -- JAVA 2 Enterprise Edition ( Web [Servlet,JSP,JSF....], JPA, EJB, JMS, ..... )
+J2ME -- JAVA 2 Micro/Mobile Edition 
+
+
+Spring Framework  (Java based framework)
+
+1) IoC --- Inversion of Control
+2) DI   --- Dependency Injection
+
+
+
+DispatcherServlet --- FrontController  
+
+While creating the object you call the parameterised constructor (during object creation time properties value will be initialised)
+by using the setter methods  (after creating the object, the properties value will be modified)
+
+Constructor Injection
+Setter Injection 
+
+Design Pattern --- Proven way (optimal solution) to resolve a particular challenge
+
+Travel from Bangalore to Mumbai  
+
+1) Public Transport/ personal (Bus/Car)
+2) Train
+3) Flight
+4) Cycle/Walk
+
+
+MVC - Web based Application 
+
+Model View Controller 
+
+Decoupling the code -- 
+
+Tightly & Loosely Coupled
+
+
+class Employee {
+
+   int empId;
+   String name;
+   Address homeAddress;
+   Address officeAddress;
+
+}
+
+
+class Address {
+
+   String doorNo;
+   String streetName;
+   String city;
+   String country;
+   String pincode;
+
+}
+
+
+Address address1 =  new Address();   // call to the default/parameterised constructor with new keyword;  // tight coupling
+
+@AutoWired
+Address address;   //loosely coupled
+
+
+
+Spiderman Toy (Tightly coupled)   vs LEGO toys(Loosely Coupled)
+
+Normal Core JAVA Application (Stand-alone application which will use the Standard JVM)
+
+Web Based Application 
+
+Spring Framework modules
+Spring Core, Spring Beans, Spring Data (ORM)
+Spring MVC, 
+
+
+
+
+Spring Framework Version 3
+Hibernate Framework
+Tomcat Server (Web Server)
+
+https://github.com/syskantechnosoft/Spring3MVCwithHibernate
+
+database.driver=com.mysql.jdbc.Driver
+database.url=jdbc:mysql://localhost:3306/syskan
+database.user=root
+database.password=root
+hibernate.dialect=org.hibernate.dialect.MySQLDialect
+hibernate.show_sql=true
+hibernate.hbm2ddl.auto=update
+
+
+
+https://www.eclipse.org/downloads/packages/     -- eclipse EE download url 
+Starting point of any web application is web.xml file (If it is available)
+
+Starting point of any stand-alone java application is Starter class (A class with the main method)
+
+
+
+XML is case as well as space sensitive.
+
+
+web.xml is also called as deployment descriptor 
+
+
+
+Spring framework is called as framework of frameworks (It supports many other frameworks like struts, hibernate, ibatis)
+
+
+
+M - Model (Represents the DATA [table in the Database])
+V  - View (JSP,ASP,HTML,....)
+C  - Controller (Controls the data and control flow)
+
+
+
+Web.xml -- > sdnext --> Controller --> Gives the ModelandView -> JSP view Page       --- index.html ->index.jsp
+add.html  --> sdnext -->controller  -->mapping for add -> execute the method (list of Employee beans)  ->  addEmployee.jsp JSP View Page (Form to add an employee & table data details)
+
+
+
+SpringBoot (POJO - Plain Old Java Object )
+
+POJO is a Simple class which will not extend any other class and also not implement any interfaces
+
+Annotations are highly used in springboot
+
+
+Annotation ---  MetaData   ---  Data about data
+
+Java Complete Reference  ---  TOC (Table of Contents) , Index (Alphabetical modules, sections, concepts) 
+
+Spring + Boot ( It's  an easy way to create spring based applications) 
+
+1) By Using spring Initilizr (start.spring.io)
+2) By Using STS 
+3) Using CLI 
+
+JVM Based WebServices 
+
+Spring will support Java, Kotlin, Groovy
+
+Maven based Project -- pom.xml 
+
+POM - Project Object Model  
+
+Maven is a tool used for Compiling, packaging, testing, building and deploying java based applications.
+It also act as a dependency resolver. 
+
+groupId
+artificatId
+[version]
+
+ 1) Using Spring Initilizr
+Step 1: Go to https://start.spring.io 
+Step 2: Select build tool (Maven/Graddle), Lang (Java/Kotlin/Groovy), SpringBoot Version, packaging, java version
+Step 3: Fill groupId and artifactId, [description], package name (groupId+artifactId)
+Step 4: adding required dependencies (devtools, spring web) -- embedded tomcat,
+Step 5: Either Download as a zip file or explore the pom.xml 
+Step 6: Open Eclipse/STS, File --> Import --> Maven Project (or) File -> Open Project from file system
+
+
+2) Using STS
+Step 1: File -> New -> Spring Starter Project
+Step 2: Fill Project Name, Project type(Maven/Graddle), Lang (Java/Kotlin/Groovy), Packaging(Jar/War), Java Version (16,11,8)
+Step 3: Fill groupId,artifactId, packageName, [description], version,
+Step 4: Select springboot version, select required dependencies (DevTools, Spring Web)
+Step 5: Click Finish
+
+
+
+
+Opinionated Framework,
+ application.properties --- key, value pairs (all the keys are predefined and values )
+
+
+WebService -- Using a URL, we can access  a particular method of a class with the help of http methods
+
+Why web Service?
+
+You SBI Customer (SBI Debit Card)
+
+test case 1 : you are going to withdraw amount using SBI ATM Machine   (JAVA)
+
+test case 2: you are going to withdraw amount using ICICI ATM Machine  (.Net)
+
+Withdrawal operation (Debit card 16 digit number / pin , amount )   OPEN API  
+
+
+End points/ API Url
+
+HTTP Methods  --- hypertext transfer protocol
+
+Network --- Connecting two or more computer and other accessories together  (for sharing the data as well as the resource)
+
+Internet -- Network of Networks  (Address)  (IP Address )
+
+
+Internet (Client - Server)
+
+WebServer, File Server, App Server, DB Server 
+
+
+(Client - Server Technology   ---- Request and Response)
+
+Request Object will be created by the Browser
+Response Object will be created by the Server 
+
+Browser is a software used by end user/ client  (Google Chrome/Firefox/Safari/Opera....) 
+
+Address Bar ( google.com)   --- requsting google.com's home page  
+
+Request object ( Header & Body  and Parameters   )
+Response Object ( Header & Body, Status code : 200 --- success, 404 -- resource not available , 500 -- server side error)
+
+
+Get Request  --- in Browser 
+
+Post Man --- API Testing Tool ( It helps in creating the request object and also to customize it)
+
+
+
+HTTP METHOD        -----   OPERATION
+GET			Read (Read ALL / Read By ID) 
+POST			Create/Insert
+PUT			Update
+DELETE			Delete 
+
+
+
+CRUD Operation --- 
+
+Batch Operation (Calculating Interest for All Saving accounts)
+
+Streaming ( Live Video, Online Live Match....)
+
+
+Client -- Server  
+Request -- Response 
+
+Hotel / Restaurant
+
+1) Booking a Table  
+2) Checking the Menu
+3) Ordering the food
+4) Enjoying the food
+5) Pay bill
+
+
+
+login.jsp?username="abc@gmail.com"&password="text123"     ? query parameters (key, value pairs)   --- GET behaviour
+
+ login.jsp   (Header /BODY)
+
+
+Web Services 
+
+SOAP based   --- Simple Object Access Protocol (Specification)   WSDL - Web Service Description/Definition Lang  (XML)
+
+REST based    --- REpresentational State Transfer (JSON - Java Script Object Notation) HTTP Methods 
+
+
+SOA - Service Oriented Architecture 
+
+Web Service, APIs, SOA, REST Service, REST APIs......
+
+https://www.springpeople.com/microservices-developer-training-certification
+
+
+
+ Introduction to MicroServices
+
+Problems with Monolithic Application
+What and Why Microservices ?
+Advantages and disadvantages of microservices
+Use case for MicroServices
+Domain Driven design
+
+ JAVA CONFIGURATION
+
+Java Configuration
+AnnotationConfig Application Context
+@Configuration, @Bean, @Import, @Scope
+@PropertySources
+Using Environment to retrieve properties
+
+
+Spring Boot Introduction
+
+What is Spring Boot?
+Spring boot maven dependencies
+@EnableAutoConfiguration
+What is @EnableAutoConfiguration is doing behind the scenes
+Diving Deep into various AutoConfiguration classes
+@SpringBootApplication
+Externalizing configuration in Spring Boot
+Accessing Command line properties
+Application properties
+@Configuration Properties
+Configuring DataSource using Boot
+TypeSafe Configuration Properties
+LAB - Using Spring Boot
+
+
+Spring MVC REST using Boot
+
+Basics of REST
+Discussion on REST Architectural principles
+@ResponseBody
+@RequestBody
+HttpMessageConverters
+Content Negotiation
+Exception Handling
+Pagination
+Http Entity
+ResponseEntity
+Client using Rest Template
+UriBuilder
+LAB - Implementing and Consuming Restful Services
+
+ Spring Cloud
+
+Overview of Spring cloud and its modules
+
+
+Spring Cloud Eureka
+
+Why DiscoveryServer?
+How to Create a Eureka Server using @EnableEurekaServer or @EnableDiscoveryServer
+How to register Eureka Client using @EnableEurekaClient or @EnableDiscoveryClient
+How to look up a service from Eureka Server
+LAB : Using Eureka Server and Client
+
+
+ Spring Cloud Ribbon
+
+Why ClientSide Load Balancing?
+What is ribbon and how to use spring ribbon?
+LAB : Implementing Client side load balancing using ribbon
+
+
+Spring Cloud Feign
+
+What is a Feign?
+Implementing REST Clients in declarative approach
+LAB : Implementing REST Client using Feign
+
+
+ Spring Cloud Hystrix
+
+What is a circuit breaker?
+Using Hystrix with Ribbon and Feign
+LAB : Using Hystrix as circuit breaker
+
+
+API Gateway and ZUUL
+
+Why API Gateway?
+What is ZUUL ?
+LAB : Using ZUUL to enable Proxying microservices
+
+
+ Spring Cloud Config
+
+Configuring Server and client pointing to configuration file in github
+@EnableConfigServer
+HTTP, resource-based API for external configuration
+Lab : Using Configuration file configured in github
